@@ -21,5 +21,9 @@ profile
 *.moved-aside
 *~.nib
 
+#Pod stuff is managed by CocoaPods
+Podfile.lock
+Changing\ Lives/Pods/*
+
 # used to add version strings to *-Info.plist
 */*-Info-plist.h
