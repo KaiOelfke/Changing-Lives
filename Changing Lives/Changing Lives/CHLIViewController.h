@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CHLIViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *testWebView;
 
 @end
