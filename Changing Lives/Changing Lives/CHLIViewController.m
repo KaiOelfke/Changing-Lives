@@ -13,7 +13,10 @@
 @end
 
 @implementation CHLIViewController
-@synthesize testWebView;
+@synthesize wView;
+@synthesize usernameTextField;
+@synthesize passwordTextField;
+@synthesize loginButton;
 
 - (void)viewDidLoad
 {
@@ -24,7 +27,10 @@
 
 - (void)viewDidUnload
 {
-    [self setTestWebView:nil];
+    [self setWView:nil];
+    [self setUsernameTextField:nil];
+    [self setPasswordTextField:nil];
+    [self setLoginButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -45,7 +51,7 @@
     NSString *location = @"Berlin";
     NSString *date = @"03-07-2012";
     NSString *studentsCount = @"1";
-    NSString *detailInfo = @"some detailt text";
+    NSString *detailInfo = @"some detail text";
     
     NSURL *baseURL = [NSURL URLWithString:@"http://alumni.changing-lives.eu/"];
     
@@ -71,7 +77,7 @@
     [getWebsiteOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject)
      {
          NSLog(@"Success at first GET");
-         [self.testWebView loadData:responseObject MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
+         [self.wView loadData:responseObject MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:baseURL];
          
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) 
      {
@@ -117,4 +123,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)pushLogin:(id)sender {
+}
 @end

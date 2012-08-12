@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHLIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *testWebView;
+@interface CHLIViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *wView;
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+- (IBAction)pushLogin:(id)sender;
 
 @end

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2820C69FB1D94020A9C64E8F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBFD0BD13D94A86AC368B4C /* libPods.a */; };
+		6E03CD4015D7F4D900C27F83 /* CHLIWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E03CD3F15D7F4D900C27F83 /* CHLIWebClient.m */; };
 		6E290A1F15B0F22F00D3B256 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1915B0F22F00D3B256 /* iTunesArtwork@2x.png */; };
 		6E290A2015B0F22F00D3B256 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1A15B0F22F00D3B256 /* Icon@2x.png */; };
 		6E290A2115B0F22F00D3B256 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1B15B0F22F00D3B256 /* Icon.png */; };
 		6E290A2215B0F22F00D3B256 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1C15B0F22F00D3B256 /* Icon-Small@2x.png */; };
 		6E290A2315B0F22F00D3B256 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1D15B0F22F00D3B256 /* Icon-Small.png */; };
 		6E290A2415B0F22F00D3B256 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6E290A1E15B0F22F00D3B256 /* iTunesArtwork */; };
+		6E65900915D850440006EDCB /* CHLIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E65900815D850430006EDCB /* CHLIConstants.m */; };
 		6ECB97C815B0EDB10076A651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECB97C715B0EDB10076A651 /* UIKit.framework */; };
 		6ECB97CA15B0EDB10076A651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECB97C915B0EDB10076A651 /* Foundation.framework */; };
 		6ECB97CC15B0EDB10076A651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECB97CB15B0EDB10076A651 /* CoreGraphics.framework */; };
@@ -27,12 +29,16 @@
 /* Begin PBXFileReference section */
 		2BBFD0BD13D94A86AC368B4C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5573B9F353DE4C3D8820307B /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6E03CD3E15D7F4D900C27F83 /* CHLIWebClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLIWebClient.h; sourceTree = "<group>"; };
+		6E03CD3F15D7F4D900C27F83 /* CHLIWebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLIWebClient.m; sourceTree = "<group>"; };
 		6E290A1915B0F22F00D3B256 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		6E290A1A15B0F22F00D3B256 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		6E290A1B15B0F22F00D3B256 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6E290A1C15B0F22F00D3B256 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		6E290A1D15B0F22F00D3B256 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		6E290A1E15B0F22F00D3B256 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		6E65900715D850430006EDCB /* CHLIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLIConstants.h; sourceTree = "<group>"; };
+		6E65900815D850430006EDCB /* CHLIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLIConstants.m; sourceTree = "<group>"; };
 		6ECB97C315B0EDB10076A651 /* Changing Lives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Changing Lives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECB97C715B0EDB10076A651 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ECB97C915B0EDB10076A651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +106,10 @@
 				6ECB97D915B0EDB10076A651 /* MainStoryboard.storyboard */,
 				6ECB97DC15B0EDB10076A651 /* CHLIViewController.h */,
 				6ECB97DD15B0EDB10076A651 /* CHLIViewController.m */,
+				6E03CD3E15D7F4D900C27F83 /* CHLIWebClient.h */,
+				6E03CD3F15D7F4D900C27F83 /* CHLIWebClient.m */,
+				6E65900715D850430006EDCB /* CHLIConstants.h */,
+				6E65900815D850430006EDCB /* CHLIConstants.m */,
 				6ECB97CE15B0EDB10076A651 /* Supporting Files */,
 			);
 			path = "Changing Lives";
@@ -213,6 +223,8 @@
 				6ECB97D415B0EDB10076A651 /* main.m in Sources */,
 				6ECB97D815B0EDB10076A651 /* CHLIAppDelegate.m in Sources */,
 				6ECB97DE15B0EDB10076A651 /* CHLIViewController.m in Sources */,
+				6E03CD4015D7F4D900C27F83 /* CHLIWebClient.m in Sources */,
+				6E65900915D850440006EDCB /* CHLIConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
