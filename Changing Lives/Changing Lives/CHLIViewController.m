@@ -31,6 +31,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    //testing
     NSString *log = @"k.oelfke@me.com";
     NSString *pwd = @"testiosapp04";
     
